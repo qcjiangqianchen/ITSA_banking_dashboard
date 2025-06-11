@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+.env
+backend/.env
+**/.env
+node_modules/
+.firebase/
+firebase-debug.log
+venv/
+.venv
+.env/

@@ -1,0 +1,9 @@
+flask
+flask-sqlalchemy
+flask-cors
+python-dotenv
+boto3
+email-validator
+requests
+pymysql
+flask-cors

@@ -1,0 +1,53 @@
+.transactionBox {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 700px;              /* wider */
+    height: 530px;                 /* taller */
+    padding: 1.5rem;
+    /* border: 1px solid #1f2937;
+    border-radius: 6px; */
+    overflow-y: auto;
+    background-color: #ffffff;
+
+    /* Center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.transactionItem {
+    border: 1px solid #d1d5db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.txnType {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.txnAmount {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.txnDate {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.backButton {
+    margin-top: 1rem;
+    align-self: flex-start;  /* Align to left edge of transactionBox */
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}

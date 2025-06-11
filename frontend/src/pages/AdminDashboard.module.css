@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.logoFixed {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logoText {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+    margin-right: 5px;
+}
+
+.logoText2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+.profileFixed {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.dashboardBox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.leftPanel {
+    flex: 1;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+.greeting {
+    font-size: 1rem;
+    color: #374151;
+}
+
+.userName {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.prompt {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+
+.rightPanel {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Headings */
+.sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Button Container (horizontal) */
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Blue Buttons */
+.primaryButton {
+    background-color: #2045b8; /* darker blue like in second image */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover {
+    background-color: #1b3a94;
+}
+
+
+.activityWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 240px; /* Keeps it compact */
+    max-height: 240px; /* Prevents overflow */
+    overflow-y: auto; /* Enables scroll when needed */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    border: 1px solid #1f2937;
+    border-radius: 6px; 
+    padding: 1rem;
+    font-size: 0.9rem;
+    word-wrap: break-word; /* Wraps long lines */
+    background-color: #ffffff;
+}
+
+
+.backButton {
+    margin-top: auto;
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-left: none;
+    padding-right: 1rem;
+    align-self: flex-start;
+}

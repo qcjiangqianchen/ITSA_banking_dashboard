@@ -1,0 +1,192 @@
+
+
+.searchHeader {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1f2937;
+}
+
+.searchTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem; /* ⬅ increased spacing */
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+}
+
+
+.input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9ca3af; /* Optional soft gray */
+}
+
+
+.buttonRow {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.searchButton,
+.primaryButton {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.searchButton:hover {
+    background-color: #1e40af;
+}
+
+.primaryButton:hover {
+    background-color: #1e40af;
+}
+
+.userBox {
+    width: 100%;
+    max-height: 360px;
+    overflow-y: auto;
+    /* border: 1px solid #1f2937; */
+    /* border-radius: 6px; */
+    /* padding: 0.5rem; */
+    background-color: #ffffff;
+}
+
+.userCard {
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.userCard:hover {
+    background-color: #f1f5f9;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.userRole {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modalActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.editButton,
+.deleteButton {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.editButton {
+    background-color: #2563eb;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #22c55e;
+}
+
+.deleteButton {
+    background-color: #ef4444;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #dc2626;
+}
+
+.backButton {
+    /* margin-top: 0.5rem; */
+    align-self: flex-start;  /* Align to left edge of transactionBox */
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}

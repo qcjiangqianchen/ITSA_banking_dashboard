@@ -1,0 +1,98 @@
+.customRightPanel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formHeader {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    text-align: left;
+}
+
+.columns {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus,
+.select:focus {
+    border-bottom: 2px solid #3b82f6;
+    /* blue underline on focus */
+}
+
+.buttonRow {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.formActions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align everything to the left */
+    gap: 0.5rem;
+}
+
+
+.saveButton {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancelButton {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.backButton {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}

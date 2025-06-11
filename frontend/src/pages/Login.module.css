@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logoWrapper {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+}
+
+.logoText {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+    margin-right: 5px;
+}
+
+.logoText2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+
+.box {
+    display: flex;
+    width: 650px;
+    height: 550px;
+    background-color: white;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; */
+    overflow: hidden;
+}
+
+.leftPanel,
+.rightPanel {
+    flex: 1;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/* .leftPanel {
+    border-right: 1px solid #e5e7eb;
+} */
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.subtext {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.inputLabel {
+    font-size: 0.85rem;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.inputField {
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    padding: 0.6rem 0;
+    margin-bottom: 1.5rem;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    transition: border-color 0.2s ease;
+    width: 100%;
+}
+
+.inputField:focus {
+    border-bottom: 1.5px solid #2563eb;
+}
+
+.signInButton {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.signInButton:hover {
+    background-color: #1e40af;
+}
+
+.rightPanel {
+    background-color: #f3f4f6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rightPanel button {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.orDivider {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin: 1rem 0;
+}

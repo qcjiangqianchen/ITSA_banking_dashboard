@@ -1,0 +1,31 @@
+version: '3.8'
+
+networks:
+  app-network:
+    driver: bridge
+
+services:
+  sftp:
+    image: atmoz/sftp
+    container_name: sftp-server
+    ports:
+      - "2222:22"
+    environment:
+      SFTP_USERS: "testuser:testpass:1001"
+    volumes:
+      - ./sftp_upload:/home/testuser/upload
+    networks:
+      - app-network
+
+  transaction:
+    build:
+      context: .
+    container_name: transaction-container
+    ports:
+      - "5003:5003"
+    env_file:
+      - .env
+    depends_on:
+      - sftp
+    networks:
+      - app-network

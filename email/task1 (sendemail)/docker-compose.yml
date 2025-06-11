@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  sendemail:
+    build: .
+    restart: always
+    container_name: sendemail
+    ports:
+      - 5005:5005
+    environment:
+      - AWS_ACCESS_KEY_ID=AKIA2FRH44W3IGCOOG7J
+      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_REGION=ap-southeast-1
+      - SQS_QUEUE_URL=https://sqs.ap-southeast-1.amazonaws.com/699089610166/Team3EventForS3
+      - STAFF_EMAIL=itsateam3@gmail.com
